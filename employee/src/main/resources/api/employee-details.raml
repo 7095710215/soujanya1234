@@ -1,0 +1,35 @@
+#%RAML 1.0
+title: employee details
+version: v2
+protocols:
+  - HTTP
+  - https
+/employee:
+  post:
+      body:
+        application/json:
+          example:
+            {
+              "name" : "gopinath",
+              "age" : "41",
+              "address" : "mp kotur",
+              "empid" : 123456,
+              "salary" : 24000,
+              "phone" : 9676428261,
+              "derpartment" : "manager"
+            }
+      responses:
+          200:
+            body:
+              application/json:
+               example:
+                {
+                  "message" : "employee details created sucessfully"
+                }
+          400:
+            body:
+              application/json:
+                example:
+                  {
+                    "bad request"
+                  }                    

@@ -1,0 +1,31 @@
+#%RAML 1.0
+title: multipiaction
+version: v1
+protocols:
+  - HTTP
+  - HTTPS
+/multipicaton:
+  post:
+    body:
+      application/json:
+        example:
+          {
+            "multipication 20"
+          }
+    responses:
+      200:
+        body:
+          application/json:
+            example:
+              {
+                "multipication is created "
+              }
+      500:
+        body:
+              application/json:
+                example:
+                  {
+                    "internal server error"
+                  }
+                            
+              
