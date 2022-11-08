@@ -1,0 +1,30 @@
+#%RAML 1.0
+title: mydesign
+/customer:
+  post:
+    body:
+      application/json:
+        example:
+          {
+            "customername" : "soujanya",
+            "customernum" : 7095710215,
+            "customerage" : 25,
+            "customer address": "chenneai"
+          }
+    responses:
+          200:
+              body:
+                  application/json:
+                    example:
+                      {
+                        "message" :"customer created"                  
+                      }
+          500:
+           body:
+             application/json:
+               example:
+                 {
+                   "internal server error"
+                 }
+                                                                  
+                                                  
